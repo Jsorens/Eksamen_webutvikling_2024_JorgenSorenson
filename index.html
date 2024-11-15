@@ -5,36 +5,200 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vår nettbutikk | Forside</title>
+    <style>
+      /* Css for index fil */
+      #banner {
+        background-color: gray;
+      }
+      img {
+        max-width: 300px;
+      }
+      li {
+        list-style: none;
+      }
+      .product_card {
+        display: flex;
+        flex-direction: column;
+      }
+      #reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: brown;
+      }
+
+      .review {
+        background-color: aqua;
+        margin-top: 1rem;
+      }
+      /* CSS for alle filer */
+      header {
+        background-color: aliceblue;
+      }
+      footer {
+        background-color: green;
+      }
+    </style>
   </head>
+
   <body>
     <!-- Her plasserer vi hovedinnholdet vårt -->
-    <header id="header">
-      <h1>Logo</h1>
+    <header id="global-header">
+      <a href="index.html"><h1>Logo</h1></a>
       <nav>
         <ul>
           <!-- Listen inneholder menypunker for nettsiden -->
-          <li><a href="#">Hjem</a></li>
-          <li><a href="#">produkter</a></li>
-          <li><a href="#">kategorier</a></li>
-          <li><a href="#">kontakt oss</a></li>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="#products">produkter</a></li>
+          <li><a href="#categories">kategorier</a></li>
+          <li><a href="#contact">kontakt oss</a></li>
         </ul>
       </nav>
       <form>
-        <!-- Vi lager et søkefelt -->
+        <!-- Vi lager et søkefelt innenfor form taggen-->
         <label for="search">Søk</label>
-        <input type="search" placeholder="Search.." />
+        <input type="search" placeholder="Search.." id="search" />
         <input type="submit" value="Søk" />
       </form>
     </header>
 
     <main id="main">
       <h2>Main</h2>
+      <section id="banner">
+        <h3>Banner</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </section>
+
+      <section id="products">
+        <h3>Våre mest populære produkter</h3>
+        <p>Oppdag det beste av det beste!</p>
+
+        <ul>
+          <li>New product</li>
+          <li>Special price</li>
+          <li>Best sellers</li>
+        </ul>
+
+        <article class="product_card">
+          <img
+            src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+            alt="Høykvalitetsbilde av gafler"
+          />
+          <a href="#">Produkt navn</a>
+          <p>1999 kr</p>
+        </article>
+
+        <article class="product_card">
+          <img
+            src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+            alt="Høykvalitetsbilde av gafler"
+          />
+          <a href="#">Produkt navn</a>
+          <p>1999 kr</p>
+        </article>
+
+        <article class="product_card">
+          <img
+            src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+            alt="Høykvalitetsbilde av gafler"
+          />
+          <a href="#">Produkt navn</a>
+          <p>1999 kr</p>
+        </article>
+      </section>
+
+      <section id="categories">
+        <h3>Våre mest populære kategorier</h3>
+        <article class="category">
+          <p>Kategori 1</p>
+        </article>
+        <article class="category">
+          <p>Kategori 2</p>
+        </article>
+        <article class="category">
+          <p>Kategori 3</p>
+        </article>
+        <article class="category">
+          <p>Kategori 4</p>
+        </article>
+        <article class="category">
+          <p>Kategori 5</p>
+        </article>
+      </section>
+
+      <section id="reviews">
+        <h3>Reviews</h3>
+        <p>Her ligger alle reviews</p>
+
+        <aside>
+          <article class="review">
+            <h4>VELDIG STOR TUNGE!</h4>
+          </article>
+          <article class="review">
+            <h4>VELDIG STOR TUNGE!</h4>
+          </article>
+          <article class="review">
+            <h4>VELDIG STOR TUNGE!</h4>
+          </article>
+          <article class="review">
+            <h4>VELDIG STOR TUNGE!</p>
+          </article>
+          <article class="review">
+            <h4>VELDIG STOR TUNGE!</h4>
+          </article>
+        </aside>
+      </section>
     </main>
-    <aside>
-      <h3>Aside</h3>
-    </aside>
+
     <footer id="footer">
-      <h4>Footer</h4>
+      <hr />
+      <h2>Footer</h2>
+
+      <section>
+        <!-- Seksjon 1 Logo-->
+        <h4>Logo</h4>
+        <p>Lorem ipsum dolor sit amet, ave cristus rex</p>
+      </section>
+
+      <section id="contact">
+        <!-- Seksjon 2 Kontakt oss-->
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Adresse: Bjølstadveien 8B</li>
+          <li>Telefon: +47 481 94 673</li>
+          <li>Email: jsorensen@hotmail.no</li>
+          <li>Åpningstider: Stenger 20:00</li>
+        </ul>
+      </section>
+
+      <section>
+        <!-- Seksjon 3 Snarveier i form av navigasjonslenker-->
+        <h4>Snarveier</h4>
+        <nav>
+          <ul>
+            <li>Produkter</li>
+            <li>Kategorier</li>
+            <li>Kontakt oss</li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h4>Sosiale medier</h4>
+        <nav>
+          <ul>
+            <!-- Alle lenkene leder til hovedsiden for hver av platformene -->
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Linkedin</a></li>
+            <li><a href="">Pinterest</a></li>
+          </ul>
+        </nav>
+      </section>
     </footer>
   </body>
 </html>
