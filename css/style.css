@@ -1,0 +1,33 @@
+ /* Css for index fil */
+ #banner {
+    background-color: gray;
+  }
+  img {
+    max-width: 300px;
+  }
+  li {
+    list-style: none;
+  }
+  .product_card {
+    display: flex;
+    flex-direction: column;
+  }
+  #reviews {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review {
+    border-style: solid;
+    border-color: rgb(75, 75, 75);
+    border-width: 0.1rem;
+    margin-top: 1rem;
+    max-width: 90%;
+  }
+  /* CSS for alle filer */
+  header {
+    background-color: aliceblue;
+  }
+  footer {
+    background-color: green;
+  }
