@@ -3,9 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link til font awesome, vi bruker dette for ikoner -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Vår nettbutikk | Forside</title>
   </head>
+
   <body>
     <h1>Checkout</h1>
+    <main>
+      <section>
+        <h2>1. Din handlekurv</h2>
+        <article class="product_card" aria-label="article">
+          <img
+            src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+            alt="Høykvalitetsbilde av gafler"
+          />
+          <aside>
+            <a href="#">Produkt navn</a>
+            <p class="price">1999 kr</p>
+            <p>Farge: Beige</p>
+          </aside>
+        </article>
+        <article class="product_card" aria-label="article">
+          <img
+            src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+            alt="Høykvalitetsbilde av gafler"
+          />
+          <aside>
+            <a href="#">Produkt navn</a>
+            <p class="price">1999 kr</p>
+            <p>Farge: Beige</p>
+          </aside>
+        </article>
+      </section>
+
+      <section>
+        <h2>2. Dine opplysninger</h2>
+      </section>
+
+      <section>
+        <h2>3. Levering</h2>
+        <form action="">
+          <label>
+            <input
+              type="text"
+              pattern="[A-Za-zæøåÆØÅ ]{2,}"
+              required
+              placeholder="Fornavn*"
+            />
+
+            <!-- Tekstfelt for navn, med et mønster som godtar bokstaver og mellomrom (minimum 2 tegn) og som er påkrevd -->
+          </label>
+          <label>
+            <input
+              type="text"
+              pattern="[A-Za-zæøåÆØÅ ]{2,}"
+              required
+              placeholder="Etternavn*"
+            />
+
+            <!-- Tekstfelt for navn, med et mønster som godtar bokstaver og mellomrom (minimum 2 tegn) og som er påkrevd -->
+          </label>
+
+          <label>
+            <input type="text" required placeholder="Gateadresse*" />
+            <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
+          </label>
+          <label>
+            <input
+              type="number"
+              pattern="[A-Za-zæøåÆØÅ ]{2,}"
+              required
+              placeholder="Postnummer*"
+            />
+            <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
+          </label>
+          <label>
+            <input
+              type="text"
+              pattern="[A-Za-zæøåÆØÅ ]{2,}"
+              required
+              placeholder="Poststed*"
+            />
+            <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
+          </label>
+          <input type="submit" value="Lagre" />
+          <a href="#">Avbryt</a>
+        </form>
+      </section>
+
+      <section>
+        <h2>4. Betaling</h2>
+      </section>
+    </main>
   </body>
 </html>
