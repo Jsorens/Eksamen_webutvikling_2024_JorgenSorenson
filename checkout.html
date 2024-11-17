@@ -47,11 +47,7 @@
 
       <section>
         <h2>2. Dine opplysninger</h2>
-      </section>
-
-      <section>
-        <h2>3. Levering</h2>
-        <form action="">
+        <form>
           <label>
             <input
               type="text"
@@ -78,14 +74,10 @@
             <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
           </label>
           <label>
-            <input
-              type="number"
-              pattern="[A-Za-zæøåÆØÅ ]{2,}"
-              required
-              placeholder="Postnummer*"
-            />
+            <input type="number" required placeholder="Postnummer*" />
             <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
           </label>
+
           <label>
             <input
               type="text"
@@ -95,9 +87,15 @@
             />
             <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
           </label>
-          <input type="submit" value="Lagre" />
+
+          <button type="submit">Lagre</button>
+
           <a href="#">Avbryt</a>
         </form>
+      </section>
+
+      <section>
+        <h2>3. Levering</h2>
       </section>
 
       <section>
