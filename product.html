@@ -5,31 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header id="global-header">
-      <a href="index.html"><h1>Logo</h1></a>
-      <nav>
-        <ul>
-          <!-- Listen inneholder menypunker for nettsiden -->
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="index.html#products">produkter</a></li>
-          <li><a href="#categories">kategorier</a></li>
-          <li><a href="#contact">kontakt oss</a></li>
-        </ul>
-      </nav>
-      <form>
-        <!-- Vi lager et søkefelt innenfor form taggen-->
-        <label for="search">Søk</label>
-        <input type="search" placeholder="Search.." id="search" />
-        <input type="submit" value="Søk" />
-      </form>
-    </header>
-
     <footer id="footer">
       <hr />
-      <h2>Footer</h2>
-
       <section>
         <!-- Seksjon 1 Logo-->
         <h4>Logo</h4>
@@ -40,10 +26,22 @@
         <!-- Seksjon 2 Kontakt oss-->
         <h4>Kontakt</h4>
         <ul>
-          <li>Adresse: Bjølstadveien 8B</li>
-          <li>Telefon: +47 481 94 673</li>
-          <li>Email: jsorensen@hotmail.no</li>
-          <li>Åpningstider: Stenger 20:00</li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <strong>Adresse:</strong> Bjølstadveien 8B
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i><strong>Telefon:</strong> +47 481
+            94 673
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <strong>Email:</strong> jsorensen@hotmail.no
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i
+            ><strong> Åpningstider:</strong> Stenger 20:00
+          </li>
         </ul>
       </section>
 
@@ -52,9 +50,9 @@
         <h4>Snarveier</h4>
         <nav>
           <ul>
-            <li>Produkter</li>
-            <li>Kategorier</li>
-            <li>Kontakt oss</li>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="#">Kategorier</a></li>
+            <li><a href="#">Kontakt oss</a></li>
           </ul>
         </nav>
       </section>
@@ -62,11 +60,27 @@
         <h4>Sosiale medier</h4>
         <nav>
           <ul>
-            <!-- Alle lenkene leder til hovedsiden for hver av platformene -->
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Linkedin</a></li>
-            <li><a href="">Pinterest</a></li>
+            <!-- Alle ikonene har lenker som leder til hovedsiden for hver av platformene -->
+            <li>
+              <a href="https://instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="”_blank”"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="http://linkedin.com/" target="”_blank”"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://no.pinterest.com/" target="”_blank”"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+            </li>
           </ul>
         </nav>
       </section>
