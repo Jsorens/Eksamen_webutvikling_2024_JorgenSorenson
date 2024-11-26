@@ -13,277 +13,295 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Vår nettbutikk | Forside</title>
+    <title>Vår nettbutikk | Kasse</title>
   </head>
 
   <body>
-    <h1>Checkout</h1>
-    <header id="global-header">
-      <nav>
-        <ul>
-          <!-- Listen inneholder menypunker for nettsiden -->
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="#products">produkter</a></li>
-          <li>
-            <a href="index.html"><h1>Logo</h1></a>
-          </li>
-          <li><a href="#categories">kategorier</a></li>
-          <li><a href="#contact">kontakt oss</a></li>
-        </ul>
-        <!-- Bruker ikon -->
-        <i class="fa-solid fa-user"></i>
-        <!-- Hjerte ikon -->
-        <i class="fa-solid fa-heart"></i>
-        <!-- Handlekurv ikon -->
-        <a href="checkout.html"
-          ><i class="fa-solid fa-cart-shopping" id="shoppingcart-icon"></i
-        ></a>
-      </nav>
-      <form>
-        <!-- Vi lager et søkefelt innenfor form taggen-->
-        <input type="search" placeholder="Search.." id="search" />
-        <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
-      </form>
-    </header>
-
-    <main>
-      <section>
-        <h2>1. Din handlekurv</h2>
-        <article class="product_card" aria-label="article">
-          <img
-            src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
-            alt="Høykvalitetsbilde av gafler"
-          />
-          <aside>
-            <a href="#">Produkt navn</a>
-            <p class="price">1999 kr</p>
-            <p>Farge: Beige</p>
-          </aside>
-        </article>
-        <article class="product_card" aria-label="article">
-          <img
-            src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
-            alt="Høykvalitetsbilde av gafler"
-          />
-          <aside>
-            <a href="#">Produkt navn</a>
-            <p class="price">1999 kr</p>
-            <p>Farge: Beige</p>
-          </aside>
-        </article>
-      </section>
-
-      <section>
-        <h2>2. Dine opplysninger</h2>
-        <form>
-          <p>Leveringsadresse</p>
-          <label>
-            <input
-              type="text"
-              pattern="[A-Za-zæøåÆØÅ ]{2,}"
-              required
-              placeholder="Fornavn*"
-            />
-
-            <!-- Felt for fornavn -->
-          </label>
-          <label>
-            <input
-              type="text"
-              pattern="[A-Za-zæøåÆØÅ ]{2,}"
-              required
-              placeholder="Etternavn*"
-            />
-
-            <!-- Felt for etternavn -->
-          </label>
-
-          <label>
-            <input type="text" required placeholder="Gateadresse*" />
-            <!-- Felt for Gateadresse -->
-          </label>
-          <label>
-            <input type="number" required placeholder="Postnummer*" />
-            <!-- Felt for Postnummer -->
-          </label>
-
-          <label>
-            <input
-              type="text"
-              pattern="[A-Za-zæøåÆØÅ ]{2,}"
-              required
-              placeholder="Poststed*"
-            />
-            <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
-          </label>
-
-          <button type="submit">Lagre</button>
-
-          <a href="#">Avbryt</a>
-        </form>
-      </section>
-
-      <section>
-        <h2>3. Levering</h2>
-        <p>Leveringsutvalg</p>
-        <form>
-          <input
-            type="radio"
-            id="express_hjemlevering1"
-            name="levering"
-            value="express_hjemlevering1"
-            checked
-          />
-          <label for="express_hjemlevering1">Express Hjemlevering</label>
-
-          <input
-            type="radio"
-            id="express_hjemlevering2"
-            name="levering"
-            value="express_hjemlevering2"
-          />
-          <label for="express_hjemlevering2"
-            >Express Pakke til utleveringssted</label
-          >
-
-          <input
-            type="radio"
-            id="express_hjemlevering3"
-            name="levering"
-            value="express_hjemlevering3"
-          />
-          <label for="express_hjemlevering3">Standard Hjemlevering</label>
-        </form>
-      </section>
-
-      <section>
-        <h2>4. Betaling</h2>
-
-        <form id="payment-info">
-          <h3>Betal med kort</h3>
-
-          <p>Kortnummer</p>
-          <label for="card_number">
-            <input
-              id="card_number"
-              name="card_number"
-              type="number"
-              placeholder="342342****4435"
-            />
-          </label>
-
-          <p>Utløpsdato</p>
-          <label for="expiry_date">
-            <input type="date" id="expiry_date" name="expiry_date" />
-          </label>
-
-          <p>CVC/CVV</p>
-          <label for="security_code">
-            <input
-              name="security_code"
-              id="security_code"
-              type="tel"
-              maxlength="4"
-              placeholder="CVC/CVV"
-            />
-          </label>
-        </form>
-        <hr />
-        <form id="payment">
-          <p>Å betale inkl. mva.</p>
-          <p class="price">1 199 kr</p>
-          <button type="submit">Fullfør kjøp</button>
-          <p>
-            Du bekrefter herved at opplysningene og dokumentene du har opgitt er
-            korrekte og fullstendige. Leverandøren forbeholder seg retten til å
-            heve eller avlutte avtaleforholdet dersom det foreligger uriktige
-            eller ufullstendige opplysninger
-          </p>
-          <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="ja" />
-          <label for="nyhetsbrev">Ja takk! Send nyhetsbrev til meg.</label
-          ><br />
-          <input
-            type="checkbox"
-            id="tekstmeldinger"
-            name="tekstmeldinger"
-            value="ja"
-          />
-          <label for="tekstmeldinger"
-            >Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label
-          ><br />
-        </form>
-      </section>
-    </main>
-    <footer id="footer">
-      <hr />
-      <section>
-        <!-- Seksjon 1 Logo-->
-        <h4>Logo</h4>
-        <p>Lorem ipsum dolor sit amet, ave cristus rex</p>
-      </section>
-
-      <section id="contact">
-        <!-- Seksjon 2 Kontakt oss-->
-        <h4>Kontakt</h4>
-        <ul>
-          <li>
-            <i class="fa-solid fa-location-dot"></i>
-            <strong>Adresse:</strong> Bjølstadveien 8B
-          </li>
-          <li>
-            <i class="fa-solid fa-phone"></i><strong>Telefon:</strong> +47 481
-            94 673
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <strong>Email:</strong> jsorensen@hotmail.no
-          </li>
-          <li>
-            <i class="fa-solid fa-clock"></i
-            ><strong> Åpningstider:</strong> Stenger 20:00
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <!-- Seksjon 3 Snarveier i form av navigasjonslenker-->
-        <h4>Snarveier</h4>
+    <div id="grid-container">
+      <h1>Checkout</h1>
+      <header id="global-header">
         <nav>
           <ul>
-            <li><a href="#">Produkter</a></li>
-            <li><a href="#">Kategorier</a></li>
-            <li><a href="#">Kontakt oss</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section>
-        <h4>Sosiale medier</h4>
-        <nav>
-          <ul>
-            <!-- Alle ikonene har lenker som leder til hovedsiden for hver av platformene -->
+            <!-- Listen inneholder menypunker for nettsiden -->
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#products">produkter</a></li>
             <li>
-              <a href="https://instagram.com/" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
+              <a href="index.html"><h1>Logo</h1></a>
+            </li>
+            <li><a href="#categories">kategorier</a></li>
+            <li><a href="#contact">kontakt oss</a></li>
+            <li>
+              <!-- Bruker ikon -->
+              <a href="#"><i class="fa-solid fa-user"></i></a>
             </li>
             <li>
-              <a href="https://www.facebook.com/" target="”_blank”"
-                ><i class="fa-brands fa-square-facebook"></i
-              ></a>
+              <!-- Hjerte ikon -->
+              <a href="#">
+                <i class="fa-solid fa-heart"></i>
+              </a>
             </li>
             <li>
-              <a href="http://linkedin.com/" target="”_blank”"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://no.pinterest.com/" target="”_blank”"
-                ><i class="fa-brands fa-pinterest"></i
+              <!-- Handlekurv ikon -->
+              <a href="checkout.html"
+                ><i class="fa-solid fa-cart-shopping" id="shoppingcart-icon"></i
               ></a>
             </li>
           </ul>
         </nav>
-      </section>
-    </footer>
+        <form id="searchbar">
+          <!-- Vi lager et søkefelt innenfor form taggen-->
+          <label>
+            <input type="search" placeholder="Search.." id="search" />
+          </label>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </header>
+
+      <main>
+        <section>
+          <h2>1. Din handlekurv</h2>
+          <article class="product_card" aria-label="article">
+            <img
+              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+              alt="Høykvalitetsbilde av gafler"
+            />
+            <aside>
+              <a href="#">Produkt navn</a>
+              <p class="price">1999 kr</p>
+              <p>Farge: Beige</p>
+            </aside>
+          </article>
+          <article class="product_card" aria-label="article">
+            <img
+              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+              alt="Høykvalitetsbilde av gafler"
+            />
+            <aside>
+              <a href="#">Produkt navn</a>
+              <p class="price">1999 kr</p>
+              <p>Farge: Beige</p>
+            </aside>
+          </article>
+        </section>
+
+        <section>
+          <h2>2. Dine opplysninger</h2>
+          <form>
+            <p>Leveringsadresse</p>
+            <label>
+              <input
+                type="text"
+                pattern="[A-Za-zæøåÆØÅ ]{2,}"
+                required
+                placeholder="Fornavn*"
+              />
+
+              <!-- Felt for fornavn -->
+            </label>
+            <label>
+              <input
+                type="text"
+                pattern="[A-Za-zæøåÆØÅ ]{2,}"
+                required
+                placeholder="Etternavn*"
+              />
+
+              <!-- Felt for etternavn -->
+            </label>
+
+            <label>
+              <input type="text" required placeholder="Gateadresse*" />
+              <!-- Felt for Gateadresse -->
+            </label>
+            <label>
+              <input type="number" required placeholder="Postnummer*" />
+              <!-- Felt for Postnummer -->
+            </label>
+
+            <label>
+              <input
+                type="text"
+                pattern="[A-Za-zæøåÆØÅ ]{2,}"
+                required
+                placeholder="Poststed*"
+              />
+              <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
+            </label>
+
+            <button type="submit">Lagre</button>
+
+            <a href="#">Avbryt</a>
+          </form>
+        </section>
+
+        <section>
+          <h2>3. Levering</h2>
+          <p>Leveringsutvalg</p>
+          <form>
+            <input
+              type="radio"
+              id="express_hjemlevering1"
+              name="levering"
+              value="express_hjemlevering1"
+              checked
+            />
+            <label for="express_hjemlevering1">Express Hjemlevering</label>
+
+            <input
+              type="radio"
+              id="express_hjemlevering2"
+              name="levering"
+              value="express_hjemlevering2"
+            />
+            <label for="express_hjemlevering2"
+              >Express Pakke til utleveringssted</label
+            >
+
+            <input
+              type="radio"
+              id="express_hjemlevering3"
+              name="levering"
+              value="express_hjemlevering3"
+            />
+            <label for="express_hjemlevering3">Standard Hjemlevering</label>
+          </form>
+        </section>
+
+        <section>
+          <h2>4. Betaling</h2>
+
+          <form id="payment-info">
+            <h3>Betal med kort</h3>
+
+            <p>Kortnummer</p>
+            <label for="card_number">
+              <input
+                id="card_number"
+                name="card_number"
+                type="number"
+                placeholder="342342****4435"
+              />
+            </label>
+
+            <p>Utløpsdato</p>
+            <label for="expiry_date">
+              <input type="date" id="expiry_date" name="expiry_date" />
+            </label>
+
+            <p>CVC/CVV</p>
+            <label for="security_code">
+              <input
+                name="security_code"
+                id="security_code"
+                type="tel"
+                maxlength="4"
+                placeholder="CVC/CVV"
+              />
+            </label>
+          </form>
+          <hr />
+          <form id="payment">
+            <p>Å betale inkl. mva.</p>
+            <p class="price">1 199 kr</p>
+            <button type="submit">Fullfør kjøp</button>
+            <p>
+              Du bekrefter herved at opplysningene og dokumentene du har opgitt
+              er korrekte og fullstendige. Leverandøren forbeholder seg retten
+              til å heve eller avlutte avtaleforholdet dersom det foreligger
+              uriktige eller ufullstendige opplysninger
+            </p>
+            <input
+              type="checkbox"
+              id="nyhetsbrev"
+              name="nyhetsbrev"
+              value="ja"
+            />
+            <label for="nyhetsbrev">Ja takk! Send nyhetsbrev til meg.</label
+            ><br />
+            <input
+              type="checkbox"
+              id="tekstmeldinger"
+              name="tekstmeldinger"
+              value="ja"
+            />
+            <label for="tekstmeldinger"
+              >Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label
+            ><br />
+          </form>
+        </section>
+      </main>
+      <footer id="footer">
+        <hr id="breakline" />
+        <section>
+          <!-- Seksjon 1 Logo-->
+          <h4>Logo</h4>
+          <p>Lorem ipsum dolor sit amet, ave cristus rex</p>
+        </section>
+
+        <section id="contact">
+          <!-- Seksjon 2 Kontakt oss-->
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <strong>Adresse:</strong> Bjølstadveien 8B
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i><strong>Telefon:</strong> +47 481
+              94 673
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <strong>Email:</strong> jsorensen@hotmail.no
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i
+              ><strong> Åpningstider:</strong> Stenger 20:00
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <!-- Seksjon 3 Snarveier i form av navigasjonslenker-->
+          <h4>Snarveier</h4>
+          <nav>
+            <ul>
+              <li><a href="#">Produkter</a></li>
+              <li><a href="#">Kategorier</a></li>
+              <li><a href="#">Kontakt oss</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section>
+          <h4>Sosiale medier</h4>
+          <nav>
+            <ul>
+              <!-- Alle ikonene har lenker som leder til hovedsiden for hver av platformene -->
+              <li>
+                <a href="https://instagram.com/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="”_blank”"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://linkedin.com/" target="”_blank”"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://no.pinterest.com/" target="”_blank”"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>

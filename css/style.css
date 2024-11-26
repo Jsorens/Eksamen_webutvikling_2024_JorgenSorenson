@@ -1,13 +1,47 @@
  /* Css for index fil */
- * {
-  font-family: sans-serif;
+#most-popular-products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 #banner {
   background-color: gray;
+  height: 400px;
+  width: 100%;
 }
 img {
   max-width: 300px;
+}
+#products{
+  /* Seksjonenen som inneholder produkter */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  #buttons{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    button{
+      /* Vi lager høyde og bredde for knapper */
+      height: 2rem;
+      width: 6rem;
+      background-color: white;
+      border-radius: 50px;
+      border-width: 1px;
+
+      font-size: small;
+      font-weight: 500;
+      
+    }
+    button:hover{
+      /* Vi vil ha svart bakgrunn og hvit tekst for hover */
+      background-color: black;
+      color: white;
+    }
+  }
 }
 li {
   list-style: none;
@@ -15,7 +49,27 @@ li {
 .product_card {
   display: flex;
   flex-direction: column;
+  img{
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
 }
+
+#categories{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .category{
+    border-style: solid;
+    border-width: 2px;
+    height: 200px;
+    text-align: center;
+  
+  }
+}
+
 
 #review-flex-container {
   display: flex;
@@ -29,7 +83,18 @@ li {
   border-width: 1px;
   width: 100%;
 }
+
+/* CSS for product.htmk */
+#brødsmulesti{
+  display: flex;
+  flex-direction: row;
+}
+
 /* CSS for alle filer */
+* {
+  font-family: sans-serif;
+}
+
 h1{
   font-size: 2rem;
 }
@@ -50,34 +115,34 @@ a{
 }
 
 #global-header {
-  background-color: aqua;
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
+  
   flex-direction: column-reverse;
- #shoppingcart-icon{
-  margin-right: auto;
-  margin-left: -0.1rem;
+  #shoppingcart-icon{
+    margin-right: auto;
+    margin-left: -0.1rem;
  }
 }
-nav{
-  
-  
-}
+
 #searchbar{
-  padding: 0.5rem;
+  margin-top: 1rem;
+  padding: 2rem;
   width: 100%;
   #search{
-    background-color: blue;
+    border-radius: 10px;
     width: 45vh;
     height: 1.5rem;
-
   }
-
+  button{
+    opacity: 1;
+    filter: alpha(opacity=90);
+  }
 }
 
-nav ul li{
-  padding: 0.1rem;
+#global-header nav ul li{
+  padding: 0.2rem;
   margin-bottom: 5px;
   margin-left: -1rem;
 }
@@ -86,6 +151,15 @@ main{
   grid-row-end: 3;
 }
 footer {
+  padding: 1rem;
   grid-row-start: 3;
   grid-row-end: 4;
+  display: flex;
+  flex-direction: column;
+  ul> *{
+    padding: 2px;
+  }
+  #breakline{
+    width: 100%;
+  }
 }

@@ -52,10 +52,12 @@
         </nav>
         <form id="searchbar">
           <!-- Vi lager et søkefelt innenfor form taggen-->
-          <input type="search" placeholder="Search.." id="search" />
-          <label for="search"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></label>
+          <label>
+            <input type="search" placeholder="Search.." id="search" />
+          </label>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </form>
       </header>
 
@@ -76,14 +78,16 @@
         </section>
 
         <section id="products">
-          <h2>Våre mest populære produkter</h2>
-          <p>Oppdag det beste av det beste!</p>
+          <article id="most-popular-products">
+            <h2>Våre mest populære produkter</h2>
+            <p>Oppdag det beste av det beste!</p>
 
-          <ul>
-            <li><button>New product</button></li>
-            <li><button>Special price</button></li>
-            <li><button>Best sellers</button></li>
-          </ul>
+            <article id="buttons">
+              <button>New product</button>
+              <button>Special price</button>
+              <button>Best sellers</button>
+            </article>
+          </article>
 
           <article class="product_card" aria-label="article">
             <img
@@ -91,7 +95,7 @@
               alt="Høykvalitetsbilde av gafler"
             />
             <a href="#">Produkt navn</a>
-            <p class="price">1999 kr</p>
+            <p class="price">1999 Kr</p>
           </article>
           <article class="product_card" aria-label="article">
             <img
@@ -99,7 +103,7 @@
               alt="Høykvalitetsbilde av gafler"
             />
             <a href="#">Produkt navn</a>
-            <p class="price">1999 kr</p>
+            <p class="price">1999 Kr</p>
           </article>
           <article class="product_card" aria-label="article">
             <img
@@ -121,6 +125,7 @@
 
         <section id="categories" aria-label="article">
           <h2>Våre mest populære kategorier</h2>
+          <p>Oppdag det beste av det beste</p>
           <article class="category" aria-label="article">
             <p>Kategori 1</p>
           </article>
@@ -196,7 +201,7 @@
       </main>
 
       <footer id="footer">
-        <hr />
+        <hr id="breakline" />
         <section>
           <!-- Seksjon 1 Logo-->
           <h4>Logo</h4>
@@ -205,7 +210,6 @@
 
         <section id="contact">
           <!-- Seksjon 2 Kontakt oss-->
-          <h4>Kontakt</h4>
           <ul>
             <li>
               <i class="fa-solid fa-location-dot"></i>
