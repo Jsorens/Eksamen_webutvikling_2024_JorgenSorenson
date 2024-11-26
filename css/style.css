@@ -16,14 +16,16 @@ img {
   /* Seksjonenen som inneholder produkter */
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
 
   #buttons{
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;    
     gap: 1rem;
+
     button{
       /* Vi lager høyde og bredde for knapper */
       height: 2rem;
@@ -49,42 +51,71 @@ li {
 .product_card {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
   img{
     width: 100%;
     height: 300px;
     border-radius: 25px;
     margin-bottom: 10px;
   }
+  .product-info{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
 }
-
 #categories{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   .category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-style: solid;
     border-width: 2px;
-    height: 200px;
+    height: 300px;
     text-align: center;
-  
+    p{
+      font-size: 24px;
+    }
   }
 }
+
 
 
 #review-flex-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
 }
 .review {
   border-style: solid;
   border-color: black;
   border-width: 1px;
-  width: 100%;
+  padding: 1rem;
+  max-width: 289px;
+  margin-bottom: 2rem;
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 560px;
+
+  }
+  .stars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-/* CSS for product.htmk */
+/* CSS for product.html */
 #brødsmulesti{
   display: flex;
   flex-direction: row;
@@ -106,7 +137,13 @@ h1{
   justify-content: space-between;
   border: 2px solid limegreen;
   height: 100%;
+  width: 100%
   
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 a{
@@ -119,6 +156,7 @@ a{
   grid-row-end: 2;
   display: flex;
   
+  
   flex-direction: column-reverse;
   #shoppingcart-icon{
     margin-right: auto;
@@ -128,36 +166,35 @@ a{
 
 #searchbar{
   margin-top: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   #search{
     border-radius: 10px;
-    width: 45vh;
+    width: 40vh;
     height: 1.5rem;
   }
   button{
-    opacity: 1;
-    filter: alpha(opacity=90);
+    background-color: white;
+    height: 1.5rem;
+    
   }
 }
 
-#global-header nav ul li{
-  padding: 0.2rem;
-  margin-bottom: 5px;
-  margin-left: -1rem;
-}
 main{
   grid-row-start: 2;
   grid-row-end: 3;
 }
 footer {
-  padding: 1rem;
+  /* Dette representerer footern vår */
   grid-row-start: 3;
   grid-row-end: 4;
   display: flex;
   flex-direction: column;
-  ul> *{
-    padding: 2px;
+  #footer-main-content{
+    padding: rem;
+  }
+  ul > *{
+    margin-left: -1rem;
   }
   #breakline{
     width: 100%;
