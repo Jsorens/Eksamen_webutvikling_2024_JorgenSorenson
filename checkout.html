@@ -30,11 +30,12 @@
         <nav id="links">
           <ul>
             <!-- Listen inneholder menypunker for nettsiden -->
-            <section class="lenker"></section>
             <li class="lenker"><a href="index.html">Hjem</a></li>
             <li class="lenker"><a href="index.html#products">produkter</a></li>
             <li class="lenker">
-              <a href="index.html"><h1>Logo</h1></a>
+              <a href="index.html"
+                ><img src="img/logo.png" alt="logo" id="logo"
+              /></a>
             </li>
             <li class="lenker">
               <a href="index.html#categories">kategorier</a>
@@ -65,7 +66,7 @@
       </header>
 
       <main>
-        <h1>Checkout</h1>
+        <h1>Kasse</h1>
         <section>
           <h2>1. SHOPPINGBAGEN DIN</h2>
           <article class="product_card" aria-label="article">
@@ -96,7 +97,7 @@
           <h2>2. Dine opplysninger</h2>
           <header>Leveringsadresse</header>
           <div id="container-leveringsinfo">
-            <section class="leveringsinfo">
+            <article class="leveringsinfo">
               <header>Fornavn</header>
               <input
                 type="text"
@@ -105,37 +106,41 @@
                 placeholder="Fornavn*"
               />
               <!-- Felt for fornavn -->
-            </section>
+            </article>
 
-            <section class="leveringsinfo">
+            <article class="leveringsinfo">
+              <header>Etternavn</header>
               <input
                 type="text"
                 pattern="[A-Za-zæøåÆØÅ ]{2,}"
                 required
                 placeholder="Etternavn*"
               />
-            </section>
+            </article>
 
             <!-- Felt for etternavn -->
 
-            <section class="leveringsinfo">
+            <article class="leveringsinfo">
+              <header>Gateadressse</header>
               <input type="text" required placeholder="Gateadresse*" />
               <!-- Felt for Gateadresse -->
-            </section>
+            </article>
 
-            <section class="leveringsinfo">
+            <article class="leveringsinfo">
+              <header>Postnummer</header>
               <input type="number" required placeholder="Postnummer*" />
               <!-- Felt for Postnummer -->
-            </section>
+            </article>
 
-            <section class="leveringsinfo">
+            <article class="leveringsinfo">
+              <header>Poststed</header>
               <input
                 type="text"
                 pattern="[A-Za-zæøåÆØÅ ]{2,}"
                 required
                 placeholder="Poststed*"
               />
-            </section>
+            </article>
 
             <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
 
@@ -145,42 +150,72 @@
           </div>
         </section>
 
-        <section id="dine-">
+        <section>
           <h2>3. Levering</h2>
           <p>Leveringsutvalg</p>
-          <form id="flex-space">
-            <section class="flex-item">
-              <input
-                type="radio"
-                id="express_hjemlevering1"
-                name="levering"
-                value="express_hjemlevering1"
-                checked
-              />
-              <label for="express_hjemlevering1">Express Hjemlevering</label>
-            </section>
+          <form id="delivery-container">
+            <article class="delivery-card" aria-label="delivery-card">
+              <section>
+                <label for="express_hjemlevering1">
+                  <input
+                    type="radio"
+                    id="express_hjemlevering1"
+                    name="levering"
+                    value="express_hjemlevering1"
+                    checked
+                  />Express Hjemlevering
+                </label>
+                <p class="price-delivery">
+                  59 kr <i class="fa-solid fa-truck-fast"></i>
+                </p>
+              </section>
+              <p class="virkedager">3-4 Virkedager</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </article>
 
-            <section>
-              <input
-                type="radio"
-                id="express_hjemlevering2"
-                name="levering"
-                value="express_hjemlevering2"
-              />
-              <label for="express_hjemlevering2"
-                >Express Pakke til utleveringssted</label
-              >
-            </section>
+            <article class="delivery-card" aria-label="delivery-card">
+              <section>
+                <label for="express_hjemlevering2">
+                  <input
+                    type="radio"
+                    id="express_hjemlevering2"
+                    name="levering"
+                    value="express_hjemlevering2"
+                  />Express Pakke til utleveringssted
+                </label>
+                <p class="price-delivery">
+                  59 kr <i class="fa-brands fa-dhl"></i>
+                </p>
+              </section>
+              <p class="virkedager">1-3 Virkedager</p>
+            </article>
 
-            <section>
-              <input
-                type="radio"
-                id="express_hjemlevering3"
-                name="levering"
-                value="express_hjemlevering3"
-              />
-              <label for="express_hjemlevering3">Standard Hjemlevering</label>
-            </section>
+            <article class="delivery-card" aria-label="delivery-card">
+              <section>
+                <label for="express_hjemlevering3"
+                  ><input
+                    type="radio"
+                    id="express_hjemlevering3"
+                    name="levering"
+                    value="express_hjemlevering3"
+                  />Standard Hjemlevering</label
+                >
+                <p class="price-delivery">
+                  Gratis <i class="fa-solid fa-box"></i>
+                </p>
+              </section>
+
+              <p class="virkedager">1-3 Virkedager</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </article>
           </form>
         </section>
 
@@ -251,7 +286,7 @@
         <hr id="breakline" />
         <section>
           <!-- Seksjon 1 Logo-->
-          <h4>Logo</h4>
+          <img src="img/logo.png" alt="logo" id="logo" />
           <p>Lorem ipsum dolor sit amet, ave cristus rex</p>
         </section>
         <div id="footer-main-content">

@@ -46,10 +46,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around; 
-    justify-content: space-around; 
-    align-items: center;    
-    justify-content: space-around;     
-    align-items: center;    
+    align-items: center;        
     gap: 1rem;
 
     button{
@@ -85,10 +82,12 @@ li {
   display: flex;
   flex-direction: column;
   max-width: 350px;
+  height: 437px;
   img{
     width: 100%;
     border-radius: 25px;
     margin-bottom: 10px;
+    min-height: 50%;
   }
   .product-info{
     width: 100%;
@@ -99,7 +98,7 @@ li {
     margin-bottom: 1rem;
   }
   .stars-product{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     gap: 0.2rem;
     aside{
@@ -201,27 +200,58 @@ li {
 /* CSS
  for checkout.html fil */
 
-#leveringsadresse{
-  display: flex;
-  flex-direction: column;
-}
-.leveringsinfo{
-  background-color: red;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  form{
-    width: 100%;
-    gap: 2rem;
-    height: 30px;
+
+.delivery-card{
+  border: solid 1px grey;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
     
+    p{
+      margin-left: 1rem;
+    }
+  }
+  .virkedager{
+    color: grey;
+    font-weight: bold;
   }
 }
 
+#container-leveringsinfo{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .leveringsinfo{
+    width: 100%;
+  }
+  button{
+    background-color: rgb(47, 46, 46);
+    color: white;
+    height: 3rem;
+  }
+  a{
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+  }
+  input{
+    height: 2rem;
+    width: 100%;
+  }
+}
 /* CSS for alle filer */
 * {
   font-family: sans-serif;
+  
 }
 
+#logo{
+  width: 70px;
+}
 body{
   max-width: 1200px;
 }
@@ -263,6 +293,12 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+}
+#icons ul li a:hover{
+
+  i{
+    transform: scale(1.3);
   }
 }
 
@@ -319,7 +355,7 @@ Vi bruker media queries for å få responsivt design på nettstedet vårt */
   body{
     margin: 0 auto;
     padding: 0;
-  };
+  }
   #global-header {
     flex-direction: row;
     justify-content: space-between;
