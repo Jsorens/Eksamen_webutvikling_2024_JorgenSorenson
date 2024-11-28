@@ -18,17 +18,32 @@
   <body>
     <div id="grid-container">
       <header id="global-header">
-        <h1>Checkout</h1>
-        <nav>
+        <form id="searchbar">
+          <!-- Vi lager et søkefelt innenfor form taggen-->
+          <label>
+            <input type="search" placeholder="Search.." id="search" />
+          </label>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav id="links">
           <ul>
             <!-- Listen inneholder menypunker for nettsiden -->
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="index.html#products">produkter</a></li>
-            <li>
+            <section class="lenker"></section>
+            <li class="lenker"><a href="index.html">Hjem</a></li>
+            <li class="lenker"><a href="index.html#products">produkter</a></li>
+            <li class="lenker">
               <a href="index.html"><h1>Logo</h1></a>
             </li>
-            <li><a href="index.html#categories">kategorier</a></li>
-            <li><a href="index.html#contact">kontakt oss</a></li>
+            <li class="lenker">
+              <a href="index.html#categories">kategorier</a>
+            </li>
+            <li class="lenker"><a href="index.html#contact">kontakt oss</a></li>
+          </ul>
+        </nav>
+        <nav id="icons">
+          <ul>
             <li>
               <!-- Bruker ikon -->
               <a href="#"><i class="fa-solid fa-user"></i></a>
@@ -47,20 +62,12 @@
             </li>
           </ul>
         </nav>
-        <form id="searchbar">
-          <!-- Vi lager et søkefelt innenfor form taggen-->
-          <label>
-            <input type="search" placeholder="Search.." id="search" />
-          </label>
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
       </header>
 
       <main>
+        <h1>Checkout</h1>
         <section>
-          <h2>1. Din handlekurv</h2>
+          <h2>1. SHOPPINGBAGEN DIN</h2>
           <article class="product_card" aria-label="article">
             <img
               src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
@@ -85,86 +92,95 @@
           </article>
         </section>
 
-        <section>
+        <section id="checkout_section2">
           <h2>2. Dine opplysninger</h2>
-          <form id="Leveringsadresse">
-            <p>Leveringsadresse</p>
-            <label>
+          <header>Leveringsadresse</header>
+          <div id="container-leveringsinfo">
+            <section class="leveringsinfo">
+              <header>Fornavn</header>
               <input
                 type="text"
                 pattern="[A-Za-zæøåÆØÅ ]{2,}"
                 required
                 placeholder="Fornavn*"
               />
-
               <!-- Felt for fornavn -->
-            </label>
-            <label>
+            </section>
+
+            <section class="leveringsinfo">
               <input
                 type="text"
                 pattern="[A-Za-zæøåÆØÅ ]{2,}"
                 required
                 placeholder="Etternavn*"
               />
+            </section>
 
-              <!-- Felt for etternavn -->
-            </label>
+            <!-- Felt for etternavn -->
 
-            <label>
+            <section class="leveringsinfo">
               <input type="text" required placeholder="Gateadresse*" />
               <!-- Felt for Gateadresse -->
-            </label>
-            <label>
+            </section>
+
+            <section class="leveringsinfo">
               <input type="number" required placeholder="Postnummer*" />
               <!-- Felt for Postnummer -->
-            </label>
+            </section>
 
-            <label>
+            <section class="leveringsinfo">
               <input
                 type="text"
                 pattern="[A-Za-zæøåÆØÅ ]{2,}"
                 required
                 placeholder="Poststed*"
               />
-              <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
-            </label>
+            </section>
+
+            <!-- Felt for telefonnummer, som krever 8 til 12 sifre -->
 
             <button type="submit">Lagre</button>
 
             <a href="#">Avbryt</a>
-          </form>
+          </div>
         </section>
 
-        <section>
+        <section id="dine-">
           <h2>3. Levering</h2>
           <p>Leveringsutvalg</p>
-          <form>
-            <input
-              type="radio"
-              id="express_hjemlevering1"
-              name="levering"
-              value="express_hjemlevering1"
-              checked
-            />
-            <label for="express_hjemlevering1">Express Hjemlevering</label>
+          <form id="flex-space">
+            <section class="flex-item">
+              <input
+                type="radio"
+                id="express_hjemlevering1"
+                name="levering"
+                value="express_hjemlevering1"
+                checked
+              />
+              <label for="express_hjemlevering1">Express Hjemlevering</label>
+            </section>
 
-            <input
-              type="radio"
-              id="express_hjemlevering2"
-              name="levering"
-              value="express_hjemlevering2"
-            />
-            <label for="express_hjemlevering2"
-              >Express Pakke til utleveringssted</label
-            >
+            <section>
+              <input
+                type="radio"
+                id="express_hjemlevering2"
+                name="levering"
+                value="express_hjemlevering2"
+              />
+              <label for="express_hjemlevering2"
+                >Express Pakke til utleveringssted</label
+              >
+            </section>
 
-            <input
-              type="radio"
-              id="express_hjemlevering3"
-              name="levering"
-              value="express_hjemlevering3"
-            />
-            <label for="express_hjemlevering3">Standard Hjemlevering</label>
+            <section>
+              <input
+                type="radio"
+                id="express_hjemlevering3"
+                name="levering"
+                value="express_hjemlevering3"
+              />
+              <label for="express_hjemlevering3">Standard Hjemlevering</label>
+            </section>
           </form>
         </section>
 
@@ -233,15 +249,15 @@
       </main>
       <footer id="footer">
         <hr id="breakline" />
+        <section>
+          <!-- Seksjon 1 Logo-->
+          <h4>Logo</h4>
+          <p>Lorem ipsum dolor sit amet, ave cristus rex</p>
+        </section>
         <div id="footer-main-content">
-          <section>
-            <!-- Seksjon 1 Logo-->
-            <h4>Logo</h4>
-            <p>Lorem ipsum dolor sit amet, ave cristus rex</p>
-          </section>
-
           <section id="contact">
             <!-- Seksjon 2 Kontakt oss-->
+            <h4>KONTAKT</h4>
             <ul>
               <li>
                 <i class="fa-solid fa-location-dot"></i>
@@ -276,7 +292,7 @@
           <section>
             <h4>Sosiale medier</h4>
             <nav>
-              <ul>
+              <ul id="social-media-links">
                 <!-- Alle ikonene har lenker som leder til hovedsiden for hver av platformene -->
                 <li>
                   <a href="https://instagram.com/" target="_blank"

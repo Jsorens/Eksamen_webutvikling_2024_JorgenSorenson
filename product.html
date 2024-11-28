@@ -16,16 +16,32 @@
   <body>
     <div id="grid-container">
       <header id="global-header">
-        <nav>
+        <form id="searchbar">
+          <!-- Vi lager et søkefelt innenfor form taggen-->
+          <label>
+            <input type="search" placeholder="Search.." id="search" />
+          </label>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav id="links">
           <ul>
             <!-- Listen inneholder menypunker for nettsiden -->
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="#products">produkter</a></li>
-            <li>
+            <section class="lenker"></section>
+            <li class="lenker"><a href="index.html">Hjem</a></li>
+            <li class="lenker"><a href="index.html#products">produkter</a></li>
+            <li class="lenker">
               <a href="index.html"><h1>Logo</h1></a>
             </li>
-            <li><a href="#categories">kategorier</a></li>
-            <li><a href="#contact">kontakt oss</a></li>
+            <li class="lenker">
+              <a href="index.html#categories">kategorier</a>
+            </li>
+            <li class="lenker"><a href="index.html#contact">kontakt oss</a></li>
+          </ul>
+        </nav>
+        <nav id="icons">
+          <ul>
             <li>
               <!-- Bruker ikon -->
               <a href="#"><i class="fa-solid fa-user"></i></a>
@@ -44,43 +60,157 @@
             </li>
           </ul>
         </nav>
-        <form id="searchbar">
-          <!-- Vi lager et søkefelt innenfor form taggen-->
-          <label>
-            <input type="search" placeholder="Search.." id="search" />
-          </label>
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
       </header>
 
       <main>
-        <nav id="brødsmulesti">
-          <ul>
-            <li><a href="index.html">Hjem</a></li>
-            <li>></li>
-            <li><a href="index.html#categories">Kategori</a></li>
-            <li>></li>
-            <li><span>Produktnavn</span></li>
-          </ul>
-        </nav>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Hjem</a></li>
+          <li>></li>
+          <li><a href="index.html#categories">Kategori</a></li>
+          <li>></li>
+          <li><a href="product.html">Produktnavn</a></span></li>
+        </ul>
+
         <section id="product-main">
-          <article id="large-image"></article>
+          <article id="small_image">
+            <img src="/img/produkt_1.jpg" alt="#">
+            <img src="/img/produkt_1.jpg" alt="#">
+            <img src="/img/produkt_1.jpg" alt="#">
+          </article>
+          <article id="large-image">
+            <img src="/img/produkt_1.jpg" alt="#">
+          </article>
         </section>
+
+        <h2>Lignende produkter</h2>
+        <aside class="similar-products">
+          <article class="product_card" aria-label="article">
+            <img
+              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+              alt="Høykvalitetsbilde av gafler"
+            />
+            <section class="product-info">
+              <a href="product.html"><strong>Product name</strong></a>
+              <p class="price">Kr 1999</p>
+            </section>
+            <section class="stars-product">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <aside><strong>842 Reviews</strong></aside>
+            </section>
+          </article>
+
+          <article class="product_card" aria-label="article">
+            <img
+              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+              alt="Høykvalitetsbilde av gafler"
+            />
+            <section class="product-info">
+              <a href="product.html"><strong>Product name</strong></a>
+              <p class="price">Kr 1999</p>
+            </section>
+            <section class="stars-product">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <aside><strong>842 Reviews</strong></aside>
+            </section>
+          </article>
+
+          <article class="product_card" aria-label="article">
+            <img
+              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+              alt="Høykvalitetsbilde av gafler"
+            />
+            <section class="product-info">
+              <a href="product.html"><strong>Product name</strong></a>
+              <p class="price">Kr 1999</p>
+            </section>
+            <section class="stars-product">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <aside><strong>842 Reviews</strong></aside>
+            </section>
+          </article>
+
+          <article class="product_card" aria-label="article">
+            <img
+              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+              alt="Høykvalitetsbilde av gafler"
+            />
+            <section class="product-info">
+              <a href="product.html"><strong>Product name</strong></a>
+              <p class="price">Kr 1999</p>
+            </section>
+            <section class="stars-product">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <aside><strong>842 Reviews</strong></aside>
+            </section>
+          </article>
+          <article class="product_card" aria-label="article">
+            <img
+              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+              alt="Høykvalitetsbilde av gafler"
+            />
+            <section class="product-info">
+              <a href="product.html"><strong>Product name</strong></a>
+              <p class="price">Kr 1999</p>
+            </section>
+            <section class="stars-product">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <aside><strong>842 Reviews</strong></aside>
+            </section>
+          </article>
+          <article class="product_card" aria-label="article">
+            <img
+              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+              alt="Høykvalitetsbilde av gafler"
+            />
+            <section class="product-info">
+              <a href="product.html"><strong>Product name</strong></a>
+              <p class="price">Kr 1999</p>
+            </section>
+            <section class="stars-product">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <aside><strong>842 Reviews</strong></aside>
+            </section>
+          </article>
+        </aside>
       </main>
+      
+      
 
       <footer id="footer">
         <hr id="breakline" />
+        <section>
+          <!-- Seksjon 1 Logo-->
+          <h4>Logo</h4>
+          <p>Lorem ipsum dolor sit amet, ave cristus rex</p>
+        </section>
         <div id="footer-main-content">
-          <section>
-            <!-- Seksjon 1 Logo-->
-            <h4>Logo</h4>
-            <p>Lorem ipsum dolor sit amet, ave cristus rex</p>
-          </section>
-
           <section id="contact">
             <!-- Seksjon 2 Kontakt oss-->
+            <h4>KONTAKT</h4>
             <ul>
               <li>
                 <i class="fa-solid fa-location-dot"></i>
@@ -115,7 +245,7 @@
           <section>
             <h4>Sosiale medier</h4>
             <nav>
-              <ul>
+              <ul id="social-media-links">
                 <!-- Alle ikonene har lenker som leder til hovedsiden for hver av platformene -->
                 <li>
                   <a href="https://instagram.com/" target="_blank"
