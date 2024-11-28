@@ -34,7 +34,6 @@
         <nav id="links">
           <ul>
             <!-- Listen inneholder menypunker for nettsiden -->
-            <section class="lenker"></section>
             <li class="lenker"><a href="index.html">Hjem</a></li>
             <li class="lenker"><a href="index.html#products">produkter</a></li>
             <li class="lenker">
@@ -43,7 +42,7 @@
             <li class="lenker">
               <a href="index.html#categories">kategorier</a>
             </li>
-            <li class="lenker"><a href="index.html#contact">kontakt oss</a></li>
+            <li class="lenker"><a href="#contact">kontakt oss</a></li>
           </ul>
         </nav>
         <nav id="icons">
@@ -92,102 +91,122 @@
             <p>Oppdag det beste av det beste!</p>
 
             <article id="buttons">
-              <button>New product</button>
-              <button>Special price</button>
-              <button>Best sellers</button>
+              <button>New Product</button>
+              <button>Special Price</button>
+              <button>Best Sellers</button>
             </article>
           </article>
 
-          <article class="product_card" aria-label="article">
-            <img
-              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
-              alt="Høykvalitetsbilde av gafler"
-            />
-            <section class="product-info">
-              <a href="product.html"><strong>Product name</strong></a>
-              <p class="price">Kr 1999</p>
-            </section>
-            <section class="stars-product">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <aside><strong>842 Reviews</strong></aside>
-            </section>
-          </article>
-          <article class="product_card" aria-label="article">
-            <img
-              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
-              alt="Høykvalitetsbilde av gafler"
-            />
-            <section class="product-info">
-              <a href="product.html"><strong>Product name</strong></a>
-              <p class="price">Kr 1999</p>
-            </section>
-            <section class="stars-product">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <aside><strong>842 Reviews</strong></aside>
-            </section>
-          </article>
-          <article class="product_card" aria-label="article">
-            <img
-              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
-              alt="Høykvalitetsbilde av gafler"
-            />
-            <section class="product-info">
-              <a href="product.html"><strong>Product name</strong></a>
-              <p class="price">Kr 1999</p>
-            </section>
-            <section class="stars-product">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <aside><strong>842 Reviews</strong></aside>
-            </section>
-          </article>
-          <article class="product_card" aria-label="article">
-            <img
-              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
-              alt="Høykvalitetsbilde av gafler"
-            />
-            <section class="product-info">
-              <a href="product.html"><strong>Product name</strong></a>
-              <p class="price">Kr 1999</p>
-            </section>
-            <section class="stars-product">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <aside><strong>842 Reviews</strong></aside>
-            </section>
-          </article>
-          <article class="product_card" aria-label="article">
-            <img
-              src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
-              alt="Høykvalitetsbilde av gafler"
-            />
-            <section class="product-info">
-              <a href="product.html"><strong>Product name</strong></a>
-              <p class="price">Kr 1999</p>
-            </section>
-            <section class="stars-product">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <aside><strong>842 Reviews</strong></aside>
-            </section>
-          </article>
+          <div class="product-cards-container">
+            <article class="product_card" aria-label="article">
+              <img
+                src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+                alt="Høykvalitetsbilde av gafler"
+              />
+              <section class="product-info">
+                <a href="product.html"><strong>Product name</strong></a>
+                <p class="price">Kr 1999</p>
+              </section>
+              <section class="stars-product">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <aside><strong>842 Reviews</strong></aside>
+              </section>
+            </article>
+            <article class="product_card" aria-label="article">
+              <img
+                src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+                alt="Høykvalitetsbilde av gafler"
+              />
+              <section class="product-info">
+                <a href="product.html"><strong>Product name</strong></a>
+                <p class="price">Kr 1999</p>
+              </section>
+              <section class="stars-product">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <aside><strong>842 Reviews</strong></aside>
+              </section>
+            </article>
+            <article class="product_card" aria-label="article">
+              <img
+                src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+                alt="Høykvalitetsbilde av gafler"
+              />
+              <section class="product-info">
+                <a href="product.html"><strong>Product name</strong></a>
+                <p class="price">Kr 1999</p>
+              </section>
+              <section class="stars-product">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <aside><strong>842 Reviews</strong></aside>
+              </section>
+            </article>
+            <article class="product_card" aria-label="article">
+              <img
+                src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+                alt="Høykvalitetsbilde av gafler"
+              />
+              <section class="product-info">
+                <a href="product.html"><strong>Product name</strong></a>
+                <p class="price">Kr 1999</p>
+              </section>
+              <section class="stars-product">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <aside><strong>842 Reviews</strong></aside>
+              </section>
+            </article>
+            <article class="product_card" aria-label="article">
+              <img
+                src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+                alt="Høykvalitetsbilde av gafler"
+              />
+              <section class="product-info">
+                <a href="product.html"><strong>Product name</strong></a>
+                <p class="price">Kr 1999</p>
+              </section>
+              <section class="stars-product">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <aside><strong>842 Reviews</strong></aside>
+              </section>
+            </article>
+            <article class="product_card" aria-label="article">
+              <img
+                src="https://fastly.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE"
+                alt="Høykvalitetsbilde av gafler"
+              />
+              <section class="product-info">
+                <a href="product.html"><strong>Product name</strong></a>
+                <p class="price">Kr 1999</p>
+              </section>
+              <section class="stars-product">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <aside><strong>842 Reviews</strong></aside>
+              </section>
+            </article>
+          </div>
         </section>
 
         <section id="categories" aria-label="article">
@@ -210,11 +229,11 @@
           </article>
         </section>
 
-        <section>
+        <section id="section-reviews">
           <h3>Reviews</h3>
           <p>Her ligger alle reviews</p>
 
-          <aside id="review-flex-container">
+          <div id="review-flex-container" aria-live="polite" aria-atomic="true">
             <!-- Her er alle artiklene for anmeldelsene -->
             <article class="review">
               <img src="img/Kattepus.jpg" alt="en bilde av en søt kattepus" />
@@ -268,25 +287,7 @@
                 Integer in eros a odio egestas imperdiet et in dui.
               </p>
             </article>
-
-            <article class="review">
-              <img src="img/Kattepus.jpg" alt="en bilde av en søt kattepus" />
-              <h4>VELDIG STOR TUNGE!</h4>
-              <section class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </section>
-              <p class="user_review_text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                sed lacinia lacus, a euismod urna. Praesent gravida nisi eget
-                purus euismod iaculis. Phasellus rutrum at erat vitae aliquet.
-                Integer in eros a odio egestas imperdiet et in dui.
-              </p>
-            </article>
-          </aside>
+          </div>
         </section>
       </main>
 
@@ -326,9 +327,9 @@
             <h4>Snarveier</h4>
             <nav>
               <ul>
-                <li><a href="#">Produkter</a></li>
-                <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
+                <li><a href="index.html#products">Produkter</a></li>
+                <li><a href="index.html#categories">Kategorier</a></li>
+                <li><a href="index.html#contact">Kontakt oss</a></li>
               </ul>
             </nav>
           </section>
